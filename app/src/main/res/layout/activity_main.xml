@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    android:orientation="vertical"
+    android:layout_marginVertical="20dp"
+    tools:context=".MainActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Creer un compte"
+        android:layout_marginTop="30dp"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:textColor="@color/black"
+        >
+
+    </TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="pseudo"
+        android:textSize="20dp"
+        android:textColor="#1A237E">
+    </TextView>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/cadrant"
+        android:backgroundTint="#F4F6F6"
+        android:layout_marginTop="5dp"
+        android:inputType="text"
+        android:id="@+id/pseudo1"
+        android:padding="10dp"
+        android:hint="Entrez vodre pseudo"
+        >
+    </EditText>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Email"
+        android:textSize="20dp"
+        android:textColor="#1A237E">
+    </TextView>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/cadrant"
+        android:inputType="textEmailAddress"
+        android:id="@+id/Email1"
+        android:backgroundTint="#F4F6F6"
+        android:layout_marginTop="5dp"
+        android:padding="10dp"
+        android:hint="abcde@yyz.com"
+        >
+    </EditText>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Mot de passe"
+        android:textSize="20dp"
+        android:textColor="#1A237E">
+    </TextView>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/cadrant"
+        android:backgroundTint="#F4F6F6"
+        android:inputType="textPassword"
+        android:drawableRight="@drawable/ic_baseline_visibility_24"
+        android:id="@+id/password1"
+        android:layout_marginTop="5dp"
+        android:padding="10dp"
+        android:hint="Entrez votre mot de passe"
+        >
+    </EditText>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Confirmer le mot de passe"
+        android:textSize="20dp"
+        android:textColor="#1A237E">
+    </TextView>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/cadrant"
+        android:inputType="textPassword"
+        android:drawableRight="@drawable/ic_baseline_visibility_24"
+        android:id="@+id/conf_password"
+        android:layout_marginTop="5dp"
+        android:backgroundTint="#F4F6F6"
+        android:padding="10dp"
+        android:hint="Entrez le meme mot de passe"
+        >
+    </EditText>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:id="@+id/button_connection1"
+        android:text="Créer compte"
+        android:backgroundTint="#AAC6F8"
+        >
+    </Button>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:text="---------------------Ou----------------------"
+        android:textAlignment="center"
+        android:textSize="20dp">
+    </TextView>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_google1"
+        android:text="Continuer avec Google"
+        android:drawableLeft="@drawable/google1"
+        android:textStyle="bold"
+        android:backgroundTint="#F4F6F6"
+        android:textColor="@color/black">
+    </Button>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginTop="20dp"
+            android:text="Vous avez déjà un de compte ??"
+            android:textColor="@color/black">
+        </TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:clickable="true"
+            android:text="Se connecter"
+            android:id="@+id/creation_compte1"
+            android:layout_marginTop="20dp"
+            android:gravity="end"
+            android:textColor="@color/design_default_color_primary"
+            >
+        </TextView>
+    </LinearLayout>
+
+
+
+</LinearLayout>

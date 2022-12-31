@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="30dp"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Se connecter"
+        android:layout_marginTop="50dp"
+        android:textStyle="bold"
+        android:textSize="23dp"
+        android:textColor="@color/black"
+        >
+
+    </TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="pseudo"
+        android:textSize="20dp"
+        android:textColor="#1A237E">
+
+    </TextView>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/cadrant"
+            android:inputType="text"
+            android:backgroundTint="#F4F6F6"
+            android:layout_marginTop="5dp"
+            android:id="@+id/pseudo2"
+            android:hint="Entrez votre nom" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Password"
+        android:textSize="20dp"
+        android:textColor="#1A237E">
+
+    </TextView>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/password2"
+            android:layout_marginTop="5dp"
+            android:inputType="textPassword"
+            android:backgroundTint="#F4F6F6"
+            android:background="@drawable/cadrant"
+            android:hint="Entrez votre mot de passe"
+            android:drawableRight="@drawable/ic_baseline_visibility_24"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:id="@+id/button_connection2"
+            android:text="Se connecter"
+            android:backgroundTint="#AAC6F8"
+            >
+
+        </Button>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mot de passe oublié ?"
+            android:id="@+id/mot_de_pass_oublie2"
+            android:textColor="@color/design_default_color_primary"
+            android:layout_gravity="end"
+            android:layout_marginTop="20dp"
+            android:clickable="true"
+            >
+
+
+
+        </TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:padding="10dp"
+            android:text="-----------------Ou--------------"
+            android:textAlignment="center"
+            android:textSize="20dp">
+
+        </TextView>
+    </com.google.android.material.textfield.TextInputLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_google2"
+        android:text="Continuer avec Google"
+        android:drawableLeft="@drawable/google1"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#F4F6F6"
+        android:textColor="@color/black">
+    </Button>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginTop="50dp"
+            android:text="Vous n’avez pas de compte ?"
+            android:textColor="@color/black">
+        </TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="50dp"
+            android:text="Créer un compte"
+            android:id="@+id/creation_compte2"
+            android:gravity="end"
+            android:clickable="true"
+            android:textColor="@color/design_default_color_primary"
+            >
+
+        </TextView>
+    </LinearLayout>
+
+</LinearLayout>
+
+</ScrollView>
